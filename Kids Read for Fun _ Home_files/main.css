@@ -1,15 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
 body {
     margin-top: 0;
     margin-left: 0;
-
 }
 
 header {
@@ -36,6 +35,10 @@ header h1 {
 h1 a:link {
     text-decoration: none;
   }
+
+ul {
+    margin-top: 1px;
+}
 
 li {
     list-style-type: none;
@@ -87,19 +90,21 @@ section.post-content {
 
 article {
     background-color: white;
+    box-shadow: 5px 5px 3px #d8d7d7;
     max-width: 295px;
     margin-left: 15px;
+    margin-right: 5px;
     margin-top: 25px;
     padding: 30px;
     padding-left: 25px;
     padding-right: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 article h2 {
     font-family: 'Lora', serif;
-    font-size: 26px;
+    font-size: 24px;
 }
 
 article h2 a {
@@ -146,8 +151,43 @@ p a:hover {
     text-decoration: underline;
 }
 
+p {
+    font-weight: 600;
+}
 
 
 
-/* large size style */
-@media only screen and (min-width: 64rem) 
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1200px) {
+
+main {
+    margin-top: -1260px;
+    margin-left: 300px;
+}
+
+article {
+    max-width: 525px;
+    max-height: 650px;
+    padding: 30px;
+    padding-left: 30px;
+    padding-right: 25px;
+    font-size: 14px;
+    margin-right: -25px;
+}
+
+img {
+    width: 58%;
+    margin-left: 80px;
+}
+
+header {
+    width: 250px;
+    height: 1270px
+}
+
+header h1 {
+    font-size: 38px;
+}
+
+}
+
+
